@@ -1,0 +1,136 @@
+.profileContainer {
+    width: 100%;
+    padding-top: 30px;
+    min-height: fit-content;
+    position: absolute;
+    /* padding-top: 0px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url('../../components/assets/Home/bg.jpg')  ;
+    z-index: -1;
+}
+.profileParent {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+.profileDetailsName{
+    font-size: 24px;
+}
+.profileDetailRole{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+.profileDetailRole h1{
+    font-size: 50px;
+}
+.primaryText{
+    color: var(--white)
+}
+.highlightText{
+    color:var(--dark-orange)
+}
+.profileRoleTagline{
+    font-size: 25px;
+    margin: 5px 0 0 0;
+}
+.profileOptions{
+    display: flex;
+    align-items: center;
+}
+ .highlightedBtn{
+    margin-right: 28px;
+    margin-left: 10px;
+    border: 2px solid  white;
+}
+ .highlightedBtn:hover{
+    background-color: rgb(219, 182, 35);
+    color:#111;
+    border: solid 1px grey;
+}
+.profilePicture{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 380px;
+    width: 380px;
+    margin:0 0px 0 100px;
+    
+   
+}
+.profilePictureBackground {
+    height: 85%;
+    width: 85%;
+    background-image: url("../assets/Home/vandai.JPG");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 0 0 var(--white);
+    
+}
+.profilePictureBackground:hover{
+    transform: scale(1.15);
+    transition: 0.5s ease-out;
+}
+.colz .colzIcon i{
+    color: white;
+    padding: 8px;
+    padding-left: 0px;
+    font-size: 20px;
+}
+.colz .colzIcon:hover{
+    transform: scale(1.5);
+}
+@media screen and (max-width: 1110px){
+    .profilePicture{
+        margin: 0 0px 0 80px;
+    }
+    .profileDetailsName{
+        font-size: 20px;
+    }
+    .profileDetailRole .primaryText {
+        font-size: 12px;
+    }
+    .profileOptions .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+@media screen and (max-width: 910px){
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-detail{
+        margin: 25px 0 0;
+    }
+    .profile-options .highlighted-btn {
+        margin: 0 !important;
+    }
+    .profile-options, .profile-detail-role {
+       text-align: center; 
+    }
+}
+@media screen and (max-width: 375px){
+    .profile-picture{
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+    .profile-detail{
+        width: 90%;
+    }
+}
